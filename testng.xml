@@ -2,6 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/prathibag/IdeaProjects/testng.java">
-    <classes><class name="testng.demo1"><methods><include name="testapp"/></methods></class></classes></test></suite>
+<suite name="sauce lab automation suite">
+    <test name="sanitytest" parallel="none" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="Assignments.login"/>
+    <class name="Assignments.demo2"/>
+    </classes>
+    </test>
+        </suite>
 
